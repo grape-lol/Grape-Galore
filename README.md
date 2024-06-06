@@ -5,7 +5,7 @@ Grapes Galore is a mod that simply adds grapes and cooked grapes. Grapes can be 
 <a href="https://quiltmc.org/en/"> <img src="https://badges.penpow.dev/badges/supported/quilt/cozy.svg" alt="Available For Quilt" /> </a>
 <a href="https://fabricmc.net/"> <img src="https://badges.penpow.dev/badges/supported/fabric/cozy.svg" alt="Available For Fabric" /> </a>
 <img alt="Wont support Forge" src="https://badges.penpow.dev/badges/unsupported/forge/cozy.svg">
-<a href="https://legacy.curseforge.com/minecraft/mc-mods/grape"> <img src="https://badges.penpow.dev/badges/available/curseforge/cozy.svg" alt="Get on Curseforge" /> </a>
+<a href="https://curseforge.com/minecraft/mc-mods/grape"> <img src="https://badges.penpow.dev/badges/available/curseforge/cozy.svg" alt="Get on Curseforge" /> </a>
 
 ### Support 🔧
 <a href="https://discord.gg/bygEKhsFtF"> <img src="https://badges.penpow.dev/badges/social/discord-plural/cozy.svg" alt="Join Discord" /> </a>
