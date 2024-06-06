@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "grapegalore:grape"
+  },
+  "result": "grapegalore:cooked_grape",
+  "experience": 0.2,
+  "cookingtime": 200
+}

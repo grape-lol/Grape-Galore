@@ -1,0 +1,36 @@
+{
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "${group}",
+        "id": "grapegalore",
+        "version": "${version}",
+        "metadata": {
+            "name": "Grapes Galore",
+            "description": "Adds so many grapes for grape lovers.",
+            "contributors": {
+                "Grape": "Owner"
+            },
+            "contact": {},
+            "icon": "assets/grapegalore/icon.png"
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "entrypoints": {
+            "init": "net.quiltmc.users.grape.grapegalore.GrapeGalore"
+        },
+        "depends": [
+            {
+                "id": "quilt_loader",
+                "versions": ">=0.19.1"
+            },
+            {
+                "id": "quilted_fabric_api",
+                "versions": ">=9.0.0-alpha.8+0.97.0-1.20.4"
+            },
+            {
+                "id": "minecraft",
+                "versions": ">=1.20"
+            }
+        ]
+    },
+    "mixin": "grapegalore.mixins.json"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "grapegalore:grape"
+  },
+  "result": "grapegalore:cooked_grape",
+  "experience": 0.1,
+  "cookingtime": 100
+}
