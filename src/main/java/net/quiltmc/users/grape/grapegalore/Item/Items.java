@@ -1,30 +1,30 @@
 package net.quiltmc.users.grape.grapegalore.Item;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.*;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
+import net.minecraft.item.FoodComponent;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import net.quiltmc.users.grape.grapegalore.GrapeGalore;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 public class Items {
-	public static final Item GRAPE = new Item(new QuiltItemSettings().food(
+	public static final Item GRAPE = new Item(new QuiltItemSettings().group(CustomTab.GRAPE_GROUP).food(
 		new FoodComponent.Builder()
 			.hunger(3)
 			.saturationModifier(0.4F)
 			.build()
 	));
-	public static final Item COOKED_GRAPE = new Item(new QuiltItemSettings().food(
+	public static final Item COOKED_GRAPE = new Item(new QuiltItemSettings().group(CustomTab.GRAPE_GROUP).food(
 		new FoodComponent.Builder()
 			.hunger(5)
 			.saturationModifier(0.9F)
 			.build()
 	));
-	public static final Item WINE = new WineDrinkingHandler(new QuiltItemSettings().food(
+	public static final Item WINE = new WineDrinkingHandler(new QuiltItemSettings().group(CustomTab.GRAPE_GROUP).food(
 		new FoodComponent.Builder()
 			.hunger(5)
 			.saturationModifier(0.9F)
@@ -38,14 +38,8 @@ public class Items {
 	));
 
 	public static void register(ModContainer mod) {
-		Registry.register(Registries.ITEM, new Identifier(GrapeGalore.MOD_ID, "grape"), GRAPE);
-		Registry.register(Registries.ITEM, new Identifier(GrapeGalore.MOD_ID, "cooked_grape"), COOKED_GRAPE);
-		Registry.register(Registries.ITEM, new Identifier(GrapeGalore.MOD_ID, "wine"), WINE);
-
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINKS).register(entries -> {
-			entries.addItem(GRAPE);
-			entries.addItem(COOKED_GRAPE);
-			entries.addItem(WINE);
-		});
+		Registry.register(Registry.ITEM, new Identifier(GrapeGalore.MOD_ID, "grape"), GRAPE);
+		Registry.register(Registry.ITEM, new Identifier(GrapeGalore.MOD_ID, "cooked_grape"), COOKED_GRAPE);
+		Registry.register(Registry.ITEM, new Identifier(GrapeGalore.MOD_ID, "wine"), WINE);
 	}
 }
